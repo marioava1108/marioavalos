@@ -1,0 +1,572 @@
+    @charset "UTF-8";
+
+/* CSS Document */
+
+div#fade {
+    display: none;
+}
+
+ul,
+li,
+p,
+a,
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 100%;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #1A1E23;
+}
+
+p {
+    margin: 20px;
+}
+
+li,
+p {
+    font-size: 1em;
+    line-height: 29px;
+}
+
+#project .container ul {
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+#index .stripe .container ul {
+    padding: 0 0 0 40px;
+}
+
+#index .stripe .container ul li,
+#project .container ul li {
+    list-style-type: disc;
+    list-style-position: outside;
+    flex-basis: auto
+}
+
+
+/*headers*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Khand', sans-serif;
+}
+
+h1 {
+    line-height: 1;
+    color: #1A1E23;
+    font-size: 6.9em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin: 0 20px 0px 20px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.header h3 {
+    font-size: 3.59em;
+}
+
+h3 {
+    color: #4D5A6A;
+    font-size: 2.1em;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: -0.10px;
+}
+
+.dark h4,
+.light h4,
+.dark h3,
+.light h3 {
+    display: block;
+    text-align: left;
+}
+
+.dark li,
+.dark h3,
+.dark h4 {
+    color: #e9edef;
+}
+
+.light li,
+.light h3,
+.light h4 {
+    color: #1A1E23;
+}
+
+h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.recent h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.sub {
+    font-size: 1em;
+    font-weight: 400;
+    display: block;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.dark .overview,
+.dark .sub {
+    color: #4D5A6A;
+}
+
+.dark .sub a {
+    color: #00254a;
+}
+
+.castle .sub,
+.castle .sub a {
+    color: rgba(255, 255, 255, 0.4);
+    text-align: right;
+}
+
+
+/*buttons*/
+
+a.button {
+    padding: 8px 20px 5px;
+    margin: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    font-family: 'Khand', sans-serif;
+    text-transform: uppercase;
+}
+
+a.button:hover {
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.header a.button {
+    /* special case for the header layout */
+    width: 66px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.30);
+}
+
+.header a.button {
+    background-color: rgba(229, 233, 238, 0.50);
+}
+
+.header a.button,
+.light a.button {
+    border-color: #1A1E23;
+    color: #1A1E23;
+}
+
+.navigation {
+    position: fixed;
+    background: #e9edef;
+    width: 100%;
+    z-index: 999;
+}
+
+.navigation a.link:hover,
+.header a.button:hover,
+.light a.button:hover {
+    background-color: #1A1E23;
+    color: #e9edef;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.dark a,
+.light a {
+    color: #3a659b;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.dark a:hover,
+.light a:hover {
+    color: #5fa6ff;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.dark a.button {
+    border-color: #e9edef;
+    color: #e9edef;
+}
+
+.dark a.button:hover {
+    background-color: #e9edef;
+    color: #1A1E23;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.navigation a.link {
+    padding: 3px 30px 0px 30px;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: #1A1E23;
+    font-family: 'Khand', sans-serif;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+}
+
+.navigation a.link.focused {
+    background-color: #1A1E23;
+    color: #e9edef;
+    cursor: default;
+}
+
+ul {
+    margin: 20px;
+}
+
+ul.navigation {
+    margin: 0;
+}
+
+ul.navigation li {
+    display: inline;
+}
+
+ul a {
+    line-height: 35px;
+    font-size: 1em;
+}
+
+.stripe {
+    display: block;
+    padding: 160px 0 160px;
+}
+
+.stripe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.stripe.recent {
+    padding: 18px 50px;
+}
+
+.stripe.header {
+    border: none;
+    /*cancels out stripe top border*/
+    background-color: #999;
+}
+
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+#project .stripe .container a.quarter img {
+    width: 23.6%;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.dark .container ul.skills h4 span {
+    color: #4D5A6A;
+}
+
+#project .container ul.skills {
+    padding-left: 0px;
+}
+
+#project .container ul.skills li {
+    list-style: none;
+}
+
+#index .header {
+    background: url("images/img_header.jpg");
+    background-size: ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#index .header .name {
+    padding: 50px;
+    margin: auto;
+}
+
+.title {
+    background: #e9edef;
+}
+
+.recent {
+    position: relative;
+}
+
+.recent:after {
+    position: absolute;
+    content: " ";
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 20px #ffffff solid;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    margin-left: -20px;
+}
+
+#index .left img {
+    width: 95%;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+	
+}
+
+.container .left,
+.container .right {
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.container .left {
+    text-align: center;
+}
+
+#index .stripe.header,
+#project .stripe.castle,
+#project .stripe.amazon,
+#project .stripe.hopesource,
+#project .stripe.about,
+#project .stripe.contact {
+    padding-top: 201px;
+}
+
+
+/* castle page */
+
+#project .stripe .container {
+    max-width: 800px;
+}
+
+#project .stripe .container img {
+    max-width: 760px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#project .stripe.amazon,
+#project .stripe.castle {
+    background-image: url(images/quantum/castlewallpaper.png);
+    background-attachment: fixed;
+    background-size: 100%;
+    text-align: center;
+}
+
+#project .stripe.about {
+    background-image: url(images/working.jpg);
+    background-size: cover 200%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    height: 330px;
+    background-color: #1A1E23;
+}
+
+.stripe.dark {
+    background: #1A1E23;
+    color: #e9edef;
+}
+
+.stripe.light {
+    background: #e9edef;
+    color: #1A1E23;
+}
+
+#project .stripe.freelance,
+#project .stripe.amazon,
+#project .stripe.hopesource,
+#project .stripe.avaya {
+    background: #1A1E23;
+}
+
+#project .stripe.recent {
+    background-color: #fff;
+}
+
+#project .stripe.dark .container {
+    background-color: #242935;
+}
+
+#project .stripe.light .container {
+    background-color: #fff;
+}
+
+#project .stripe.dark .container,
+#project .stripe.light .container {
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    padding: 50px
+}
+
+#project .stripe.dark .container.heading,
+#project .stripe.light .container.heading {
+    background-color: transparent;
+}
+
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+}
+
+#star-five:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+    content: '';
+}
+
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 800 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+@media only screen and (max-width: 800px) {
+    body {
+        font-size: 80%;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    h4{
+        margin-left:20px;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    a.button {
+        display: block;
+        text-align: center;
+        margin: 20px 20px;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    .navigation a.link {
+        padding: 3px 8.8px 0px;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+   
+    #index .header .name {
+        padding: 10px;
+        margin: auto;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    
+    .stripe {
+        display: block;
+        padding: 100px 5px 75px;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    #index .stripe.header,
+    #project .stripe.castle,
+    #project .stripe.amazon,
+    #project .stripe.hopesource,
+    #project .stripe.about,
+    #project .stripe.contact {
+        padding-top: 125px;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    .container .left,
+    .container .right {
+        width: 100%;
+        float: none;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    .sub {
+        font-size: .7em;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    #project .stripe.dark .container,
+    #project .stripe.light .container {
+        margin: 0 auto 30px;
+        border-radius: 5px;
+        padding: 25px 0;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    #project .stripe.about {
+        background-position: top left;
+        background-size:213%;
+        transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    .stripe.recent {
+    padding: 10px 50px;
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    }
+    #index .left img {
+    max-width: none; 
+    transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
+    margin: 20px;
+    }
+}
+    /* +:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+: CSS overides for presentation HTML +:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+: */
+    .iframe-controls-container .buttons-container,
+    .iframe-controls-container .tx-button::before,
+    .iframe-controls-container .tx-button {
+        display: none;
+    }

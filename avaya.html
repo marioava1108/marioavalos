@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    
+    
+    <meta content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport'>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Mario Avalos : UX Designer</title>
+</head>
+
+<body id="project">
+    <ul class="navigation">
+        <li><a class="link" href="index.html">HOME</a></li>
+		<li><a class="link focused" href="avaya.html">AVAYA</a></li>
+        <li><a class="link" href="castle.html">CASTLE</a></li>
+        <li><a class="link" href="amazon.html">AMAZON</a></li>
+        <li><a class="link" href="hopesource.html">HOPESOURCE</a></li>
+        <li><a class="link" href="freelance.html">FREELANCE</a></li>
+        <li><a class="link" href="about.html">ABOUT</a></li>
+		<li><a class="link" href="personal.html">PERSONAL</a></li>
+    </ul>
+    <div class="stripe avaya">
+        <div class="container">
+            <img src="images/avaya/img_avayaHeader.svg">
+        </div>
+    </div>
+    <div class="stripe recent">
+        <div class="container">
+            <h4>MY CONTRIBUTIONS</h4>
+        </div>
+    </div>
+	
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>Admin Center</h2>
+            <p>
+                Admin Center is a call center management tool used by large multinational corporations and internally for support services. Users can manage call center agents, create call flows and provision skills to workstations. 
+            </p>
+            <p>
+                The current incarnation of Admin Center is very complex and requires a bit of training from internal support teams to get customers using it on their own. But Avaya wanted to target a new customer. This customer would be a small to mid market business or call center that should need very little to no internal support to get set up. 
+            </p>
+			<p>
+				After a couple weeks of competitor research and demos of existing call center tools, I was ready to start designing a more user friendly cloud based experience. 
+			</p>
+        </div>
+        <div class="container">
+            <h3>Accounts and Sub-Accounts</h3>
+            <p>
+                Here is an example of me going over account creation. Sketching from a first run experience helps me come up with questions regarding account requirements and also surfaces possible dependencies on other features or UI elements.
+                <a href="images/avaya/accounts.jpg" target="new"><img src="images/avaya/accounts.jpg"></a>
+			</p>
+			<h4>A stronger understanding leads to higher fidelity.</h3>
+			<p>
+				As we iterate over the account creation UX other issues with account navigation start to surface and we begin to touch on that a little. 
+				<a href="images/avaya/accounts2.jpg" target="new"><img src="images/avaya/accounts2.jpg"></a>
+			</p>
+        </div>
+        <div class="container">
+            <h3>Account Navigation</h3>
+			<p>	
+				<a href="images/avaya/accountNavigation1.jpg" target="new"><img src="images/avaya/accountNavigation1.jpg"></a>
+			</p>
+            <p>
+				Account navigation was one of the first things I noticed that needed improvement and a feature our Project Manager already have alot of negative feedback on.
+			</p>
+			<p>
+				In the sketch above you can see that we are considering solving account navigation issues with a card system. Here's a couple of problems we believe a card system could solve.
+			</p>
+			<ul>
+				<li>
+					Reduce cases where users make changes to accounts they didn't intend to by requireing users to choose an account before we present them with account provisioning features.
+				</li>
+				<li>
+					Account satus abiguity. Users would now be able to see the status of their individual accounts at a high level.
+				</li>
+			</ul>
+			
+		</div>
+		<div class="container">
+
+            <h3>User Feedback</h3>
+			<p>
+				We tested a low fidelity prototype on former call center agents and sales support staff. Overall the feedback was positive in that every user seemed to understand the navigation patterns. 
+			</p>
+			<a class="button" href="https://invis.io/JUPJ2T0ZN8X#/320879095_Home_-_New_User" target="_blank">View Prototype</a>
+
+		</div>
+
+        <div class="container">
+            <h3>UX Audit</h3>
+            <p>
+				After working through some of these enhancementd with the team it became obvious that improving the AC UX was going to take a lot of work. Not just on the UI side but in the back end as well. The team was also going through an aquisition and we still had features to deliver by the end of the year. So a lot of these major improvements were going to have to be put off till 2019. :(  
+			</p>
+			<p>
+				With the limited resources we had I decided to do a UX audit of the site. I figured if I can recommend some relatively easy front-end only improvements (form styleing, notifications, validation, layout etc.) I might be able to squeeze in some enhancement tasks into the 2018 commitments we had.  
+			</p>
+			<a class="button" href="images/avaya/audit1.pdf" target="_blank">Download UX  Audit</a>
+		</div>		
+		
+		
+    </div>
+
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>ACCOUNT PROVISIONING</h2>
+            <p>
+				After a user creates an account, they need to provision certain objects to their call center like agents, agent skills and the workplaces they operate called stations or station groups.
+			</p>
+        </div>
+        <div class="container">
+			<h3>Provisioning Workflow</h3>
+            <p>
+				Once users click on the provisioning tab its difficult to know where to start and there was no logical order in the way assets are presented in the UI. What are these things and why do users need to interact with them?
+				<a href="images/avaya/provisioning1.jpg" target="new"><img src="images/avaya/provisioning1.jpg"></a>
+			</p>
+            <p>
+                After going over the existing provisioning UX I went back to the whiteboard with the goals of improving the workflow. I start as a new user sketching out what I think the UX should be based on competitor research and demos of exsting Avaya products. Sketching also helps me come up with questions for engineers and PMs around techincal and business requirements that I may need a better understanding of.  
+				<a href="images/avaya/provisioning2.jpg" target="new"><img src="images/avaya/provisioning2.jpg"></a>
+			</p>
+			<p>
+				After reviewing my sketches with engineers and our PM I have some questions answered and new problems to solve.
+				<a href="images/avaya/provisioning3.jpg" target="new"><img src="images/avaya/provisioning3.jpg"></a>
+			</p>
+         
+        </div>
+
+    </div>
+
+
+    <div class="stripe dark">
+        <div class="container heading">
+			<h2>Call Flow Designer</h2>
+            <p>
+                The call flow designer is a web application used to construct complex call flows. If you've ever been asked to press 1 for English over the phone, you've experienced some sort of call flow that was designed by someone using a tool like this.
+            </p>
+            <p>
+                Although Avaya currently has a soulution for this type of product its fairly complex and requires a skilled call center administrator to use it. We were tasked with creating a new version of this product that should be intuitive enough for a untrained users to set up and get working quickly.
+            </p>
+            
+		</div>
+        <div class="container">
+            <h3>Call Flow Dashboard</h3>
+            <p>
+                A call flow is constructed using various components some of wich are required to build even a simple queue. We thought those assets should live together where users could manage them along die their actual call flows.
+            </p>
+            <p>
+                Here is a sketch where I map out how the user accesses the CFD in Admin Center. I also sketched how a user would claim the most essential asset of a call flow, the phone number. At this point there is still alot of ambiguitiy but I though this was enough to show to our PM to get the conversation going and help us define what the requirements are for the MVP. 
+                <a href="images/avaya/callFlow1.jpg" target="new"><img src="images/avaya/callFlow1.jpg"></a>
+            </p>
+            <p>
+                Same sketch with notes from a review.
+                <a href="images/avaya/callFlow2.png" target="new"><img src="images/avaya/callFlow2.png"></a>
+            </p>
+            <h3>Splitting Up the Work</h3>
+            <p>
+                As we continue to move forward it was clear that the call flow dashboard and the call flow designer would need to be split up. Our visual designer Matt took it as an opportunity to expand his design skills into UX. From here, Matt moved foward with the dashboard UX and I was able to move onto the actual designer component of the tool. Here is a quick sketch I went over with Matt to communicate my vision how the publish feature might work.
+                <a href="images/avaya/callFlow4.jpeg" target="new"><img src="images/avaya/callFlow4.jpeg"></a>
+            </p>
+            <h3>
+                <h3>High Fidelity</h3>
+                <p>
+                Here are the results of mine and Matts work. There is alot of functionality that goes into managing call flows and having Matts help with this was a huge win for us and kept us in front of engineering.
+                
+                </p>
+                <a class="button" href="images/avaya/callFlow5.pdf" target="_blank">Download Mockups</a>
+            </h3>
+		</div>
+        <div class="container">
+            <h3>Call Flow Designer</h3>
+		    <p>
+                Most CFD tools are kind of like Photoshop in that once you launch the tool, you're left with a blank page and a bunch of awesome tools off to the side that you may not know how to use. We needed to be a bit more helpful to our users so we used a card sytem that included contextual help and explicit calls to action. 
+                <a href="images/avaya/callFlow3.jpg" target="new"><img src="images/avaya/callFlow3.jpg"></a>
+            </p>
+			<a class="button" href="images/avaya/callFlow6.pdf" target="_blank">Download PDF Mock-ups</a>
+        </div>
+	</div>
+    <div class="stripe light">
+        <div class="container heading">
+			<h2>Holiday Hours</h2>
+            <p>
+                Holiday hours are an asset used in call flows to designate what happens during a certain day. Users need to create them so they can be added to their call flows. For example, if you call your bank on Christmas day chances are they will have a special message for that holiday and/or maybe a special group of agents working on that day to direct your call to. 
+            </p>
+		</div>
+        <div class="container">
+            <p>
+                Holiday Hours are a pretty easy concept to understand so I felt we didn't need to start from sketches. There are also tons of date picking elements offered by serveral frameworks that could serve our needs. Since we knew that our users preferred to use keyboards I ended up going with the Google Material their UI is very keyboard friendly and also supports touch and mobile UX in case we added the requirement in the future. 
+            </p>
+            <a class="button" href="images/avaya/holidayHours1.pdf" target="_blank">Download Mockups</a>
+        </div>
+	</div>
+	<div class="stripe dark">
+        <div class="container heading">
+			<h2>Hours of Operation (HOOP)</h2>
+            <p>HOOP is fairly similar to holiday house except they are larger chunks of time and you can have multiple time slots within a single day.</p>
+		</div>
+        <div class="container">
+            <p>
+                HOOP was another feature I felt comfortable jumping straing in to wireframes. And again we chose to go with material UI components for the same reason as we did for Holiday Hours. Here were a couple of challenges this feature presented us with. 
+            </p>
+            <ul>
+                <li>How do we display days with mulitple time slots in the table without too much clutter?</li>
+                <li>What happens if users overlap times in a day? How and when do we show that error case and is it easier to let users overlap by a minute? For example: can users say they are open 10am - 6pm and closed 6pm to 10am? If so, which timeslot take priority?
+                </li>
+            </ul>
+            <a class="button" href="images/avaya/hoop1.pdf" target="_blank">Download Mockups</a>
+        </div>
+	</div>
+    
+   
+	
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Style Guide and UX Kit</h2>
+            <p>
+                With these type of productivity tools I tend to take a stong minimalist approach when it comes to visual design; reserving color for things like notifications, buttons and states of things (on/off, active/inactive). 
+            </p>
+            <p>I use Sketch to combine my  visual style guide and UX compoment kit. It also includes interaction patterns. </p>
+			<a class="button" href="images/avaya/uxKit2.pdf" target="_blank">View UX kit PDF</a>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>

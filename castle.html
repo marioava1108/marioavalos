@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    
+    
+    <meta content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport'>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Mario Avalos : UX Designer</title>
+</head>
+
+<body id="project">
+    <ul class="navigation">
+        <li><a class="link" href="index.html">HOME</a></li>
+		<li><a class="link" href="avaya.html">AVAYA</a></li>
+        <li><a class="link focused" href="castle.html">CASTLE</a></li>
+        <li><a class="link" href="amazon.html">AMAZON</a></li>
+        <li><a class="link" href="hopesource.html">HOPESOURCE</a></li>
+        <li><a class="link" href="freelance.html">FREELANCE</a></li>
+        <li><a class="link" href="about.html">ABOUT</a></li>
+		<li><a class="link" href="personal.html">PERSONAL</a></li>
+    </ul>
+    <div class="stripe castle">
+        <div class="container">
+            <img src="images/quantum/logo_castleWhite.svg">
+            <span class="sub">Illustration and brand identity by <a href="https://www.linkedin.com/in/matthewsheilman/" target="_blank">Matt Heilman</a></span>
+        </div>
+    </div>
+    <div class="stripe recent">
+        <div class="container">
+            <h4>MY CONTRIBUTIONS</h4>
+        </div>
+    </div>
+
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>Storage Service Configuration</h2>
+            <p>
+                Service configuration is one of the more complicated parts of the Castle experience. It's also a required step in getting the cluster to a usable state.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Block and Object Configuration</h3>
+            <p>
+                I wanted to start off with a few high level sketches to get an idea of where Block and Object storage configuration might overlap.
+                <img src="images/quantum/serviceconfiguration/service1.jpg">
+                <img src="images/quantum/serviceconfiguration/service2.jpg">
+                <img src="images/quantum/serviceconfiguration/service3.jpg"> After a few revisions it was decided that we would split up this task and I'd move forward with block configuration.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Block Configuration</h3>
+            <p>
+                This sketch was my first step (after research) into designing a storage block configuration experience. I wanted to show the major functions of this feature together at a high level.
+                <ul>
+                    <li>Service configuration (replication settings, naming)</li>
+                    <li>Creating a volume (size, provisioning, description)</li>
+                    <li>Configuring a volume (managing client access, IQN's)</li>
+                </ul>
+            </p>
+            <p>
+                <a href="images/quantum/serviceconfiguration/block1.jpg"><img src="images/quantum/serviceconfiguration/block1.jpg"></a>
+            </p>
+            <p>
+                This is where we started to dig a little deeper into creating a volume and understanding relationships between ISCSI targets, clients, volumes and volume groups.
+                <a href="images/quantum/serviceconfiguration/block2.jpg"><img src="images/quantum/serviceconfiguration/block2.jpg"></a>
+            </p>
+            <p>
+                A lot of what we're doing at this point is just trying to figure out the amount of work this feature might cost us.
+                <a href="images/quantum/serviceconfiguration/block3.jpg"><img src="images/quantum/serviceconfiguration/block3.jpg"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Prototype</h3>
+            <p>
+                I built this working prototype to help me communicate the block setup UX to the engineering team. In my experience, interactive prototypes and demos are a much more effective way to present UX than static wireframes.
+            </p>
+            <a class="button" href="images/quantum/serviceconfiguration/prototype/home.html" target="_blank">View Prototype</a>
+        </div>
+        <div class="container">
+            <h3>Visual Design</h3>
+            <p>
+                The prototype was effective in helping us make some decision as to what we could actually ship in this milestone. One of the big cuts was the client manager along with 1:1 client to volume connections. Although users could technically still create a volume within a group for a single client.
+            </p>
+            <a href="https://invis.io/ZEG21PY53BD#/281661747_Block_Storage_List_-first_Run-" class="button" target="_blank">Invision Demo</a>
+            <p>
+                <a href="https://invis.io/ZEG21PY53BD#/281661747_Block_Storage_List_-first_Run-" target="_blank"><img src="images/quantum/serviceconfiguration/config1.png"></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>SSL CONFIGURATION</h2>
+            <p>Because you don't want just anybody to have access to your object store data.</p>
+        </div>
+        <div class="container">
+            <h3>As a user, I need to upload my SSL certificate through the Castle UI.</h3>
+            <p>In the first sketch we explored two cases to solve for:
+                <ul>
+                    <li>The user has an existing certificate uploaded</li>
+                    <li>The user is uploading a certificate for the first time</li>
+                </ul>
+            </p>
+            <p>Since this was going to be a service level feature, it was pretty easy to decide that it should live in service level settings.
+                <a href="images/quantum/SSL/ssl1.jpg"><img src="images/quantum/SSL/ssl1.jpg"></a>
+            </p>
+            <p>
+                But what about adding this feature to service configuration? After further discussion we agreed that it made sense to add this feature to the service configuration UX.
+                <a href="images/quantum/SSL/ssl2.jpg"><img src="images/quantum/SSL/ssl2.jpg"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Wireframes</h3>
+            <p>
+                Now that we were happy with the user flow. I was able to move forward with wireframes. This is where we define copy, interaction design, error cases and layout.
+            </p>
+            <p>Uplaoding an SSL cert to a working object store service.</p>
+            <p>
+                <a class="quarter" href="images/quantum/SSL/configured1.png"><img src="images/quantum/SSL/configured1.png"></a>
+                <a class="quarter" href="images/quantum/SSL/configured2.png"><img src="images/quantum/SSL/configured2.png"></a>
+                <a class="quarter" href="images/quantum/SSL/configured3.png"><img src="images/quantum/SSL/configured3.png"></a>
+                <a class="quarter" href="images/quantum/SSL/configured4.png"><img src="images/quantum/SSL/configured4.png"></a>
+            </p>
+            <p>Uplaoding an SSL cert during service configuration.</p>
+            <p>
+                <a class="quarter" href="images/quantum/SSL/new1.png"><img src="images/quantum/SSL/new1.png"></a>
+                <a class="quarter" href="images/quantum/SSL/new2.png"><img src="images/quantum/SSL/new2.png"></a>
+                <a class="quarter" href="images/quantum/SSL/new3.png"><img src="images/quantum/SSL/new3.png"></a>
+                <a class="quarter" href="images/quantum/SSL/new4.png"><img src="images/quantum/SSL/new4.png"></a>
+            </p>
+            <p>SSL toggle</p>
+            <p>
+                <a class="quarter" href="images/quantum/SSL/toggle1.png"><img src="images/quantum/SSL/new1.png"></a>
+                <a class="quarter" href="images/quantum/SSL/toggle2.png"><img src="images/quantum/SSL/new2.png"></a>
+            </p>
+
+        </div>
+        <div class="container">
+            <h3>Visual Design</h3>
+            <p>
+                I used sketch to finish off the visual design along with Invision plugins to communicate final design requirements to engineers.
+            </p>
+            <p>
+                <a class="button" href="https://projects.invisionapp.com/share/65G1WKTXBUD#/screens/281615384_SSL_Settings_-post_Configured-">Invision demo</a>
+                <a class="link" href="https://projects.invisionapp.com/share/65G1WKTXBUD#/screens/281615384_SSL_Settings_-post_Configured-"><img src="images/quantum/SSL/ssl.jpg"></a>
+            </p>
+            <p>
+                <a class="quarter" href="images/quantum/SSL/sslresponsive1.jpg"><img src="images/quantum/SSL/sslresponsive1.jpg"></a>
+                <a class="quarter" href="images/quantum/SSL/sslresponsive2.jpg"><img src="images/quantum/SSL/sslresponsive2.jpg"></a>
+                <a class="quarter" href="images/quantum/SSL/sslresponsive3.jpg"><img src="images/quantum/SSL/sslresponsive3.jpg"></a>
+                <a class="quarter" href="images/quantum/SSL/sslresponsive4.jpg"><img src="images/quantum/SSL/sslresponsive4.jpg"></a>
+            </p>
+        </div>
+
+    </div>
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>First Run (Cluster Setup)</h2>
+            <p>This section will take you through my process of creating a first run user experience for Castle v1. A cloud based storage solution funded by Quantum Corp.</p>
+        </div>
+        <div class="container">
+            <h3>As a user I need a way to set up my Castle cluster.</h3>
+            <p>This user story was the starting point of designing this feature. Step one was to do some research on first run experience. Here a few helpful resources I found to give me insight on how other people are solving this for their particular product.</p>
+            <ul>
+                <li><a class="link" href="https://www.useronboard.com/user-onboarding-teardowns/">UserOnboard.com</a></li>
+                <li><a class="link" href="https://uxplanet.org/best-practices-for-onboarding-92f3a9f0b21a">UXPlanet.org</a></li>
+                <li><a href="https://firsttimeux.tumblr.com/">Krystal Higgins</a></li>
+            </ul>
+
+
+            <p>An early high level flow showing some of the steps we might want to consider in the setup process.
+                <a href="images/quantum/firstrun/sketch1.jpg"><img src="images/quantum/firstrun/sketch1.jpg"></a>
+            </p>
+
+            <!--            <p>Stories broken in to tasks and managed through Jira.
+            
+                <a href="images/castleScrum.png"><img src="images/castleScrum.png"></a>
+            </p>
+-->
+        </div>
+        <div class="container">
+            <h3>Whiteboard Sessions</h3>
+            <p>The PM and I went to the whiteboard to get a high level view of what we thought might be the basic requirements in the setup process. We then shared these sketches/flows with the lead engineer to get recommendations on any possible features or steps we may want to consider adding to the setup process.
+                <a href="images/quantum/firstrun/sketch2.jpg"><img src="images/quantum/firstrun/sketch2.jpg"></a>
+            </p>
+            <p>As we moved forward with collaboration we started adding the features recommended by engineering. This gave us more clarity around what the requirements were going to be for this feature, in this milestone. This also gave me the opportunity to experiment a little bit with the layout. In this example I was considering a contextual experience.
+                <a href="images/quantum/firstrun/sketch3.jpg"><img src="images/quantum/firstrun/sketch3.jpg"></a>
+            </p>
+            <p>In this stage of the design process we were able to identify areas of more complexity (cost) in the setup process. For example, password recovery was going to need to become its own separate and we still were not sure if we were going to require a license key from users to complete setup.
+                <a href="images/quantum/firstrun/sketch4.jpg"><img src="images/quantum/firstrun/sketch4.jpg"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>License Key</h3>
+            <p>
+                A late entry to the list of requirements for the setup UX was the user license agreement upload. There were 2 methods we wanted to look at. A file upload method and a copy paste method.
+            </p>
+            <p>
+                Because the license terms dictate the number of nodes a user can add to their Castle cluster, we needed to take another look at the "select nodes" step as well.
+                <a href="images/quantum/firstrun/license1.jpg"><img src="images/quantum/firstrun/license1.jpg"></a>
+            </p>
+            <p>
+                As we dove deeper into this experience, we made a decision to go with a file upload UX instead of the form upload one. We also took a look at how we might present the license details during this process as well as error cases.
+                <a href="images/quantum/firstrun/license2.jpg"><img src="images/quantum/firstrun/license2.jpg"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Wireframes</h3>
+            <p>
+                With the bulk of the UX decision-making done (hopefully), I moved to higher fidelity with wireframes. This is where we start to define error cases, copy, interaction design and layout. <br>
+                <a class="button" href="https://projects.invisionapp.com/freehand/document/f9WuEklrZ" target="_blank">Invision Demo</a>
+                <a href="https://projects.invisionapp.com/freehand/document/f9WuEklrZ" target="_blank"><img src="images/quantum/firstrun/wireframe1.png"></a>
+            </p>
+            <p>
+                Unfortunately, this is where my work on Castle comes to an end. As Quantum struggled to perform well as a company the new CEO decided to close the Castle offices on February 9th 2018.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Password Recovery</h2>
+            <p>
+                A very common problem with tons of existing solutions. However, most of those solutions assume there is an internet connection. But due to the nature of setting up brand new clusters, we also need a user-friendly solution to an offline recovery experience. I began my research by looking at O.S. recovery experiences and went from there.
+            </p>
+        </div>
+        <div class="container">
+            <h3>As a user, I need to be able to reset my password</h3>
+            <p>
+                This is my initial sketch for the password recovery flow during login. Here I'm trying to solve for an online or offline case. While working on this I started thinking about other areas of the app where a user might want to update or change a password. I thought there might be areas of overlap in those two experiences so I sketched that out to get a higher level view at it.
+                <a href="images/quantum/firstrun/recover1.jpg"><img src="images/quantum/firstrun/recover1.jpg"></a>
+            </p>
+            <p>
+                During the review of this sketch more questions arose around user management than password recovery. The outcome was that we needed to create a new task specifically for account management and possibly prioritize it for our next milestone.
+                <a href="images/quantum/firstrun/recover2.jpg"><img src="images/quantum/firstrun/recover2.jpg"></a>
+            </p>
+        </div>
+    </div>
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>The Castle Design system</h2>
+            <p>
+                During the development of Castle we agreed to switch to Sketch as our primary design tool. This opened up an opportunity to update the current design system so that it would work well with the advanced features in Sketch.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Atomic Design</h3>
+            <p>
+                My first step was to reorganize the current pattern library using the atomic design method. Here is <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">a blog post by Brad Frost</a> on Atomic Design. He literally wrote the book on it.
+                <a href="images/quantum/uikit/uikit.png"><img src="images/quantum/uikit/uikit.png"></a>
+            </p>
+            <p>
+                While migrating assets into Sketch I decided to leave the elements we weren't currently using behind. Our current pattern library was full of clutter and I wanted to make it easier to find design components.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Sketch and Nested Symbols</h3>
+            <p>
+                We needed a way to control repeating assets so we could update them quickly. Sketches' symbol overrides feature gave us a lot of control and flexibility. We could now propagate changes across multiple artboards as well as customize specific states of those symbols quickly. The overall nature of symbols worked great with the Atomic Design system. A designer can now drag individual symbols from the UI kit onto their file and get all the functionality of those symbol overrides.
+
+                <a href="images/quantum/uikit/symbols.png"><img src="images/quantum/uikit/symbols.png"></a>
+            </p>
+
+            <p>
+                Moving to Sketch optimized the design workflow as well. Designers could now open the sketch file, add the components they would need for their design to their design file. All the symbols contained in those components are then added to the users file automatically. Another win with Sketch and the Invision plugin is that we no longer had to spend times creating redlines manually. Since sketch is built on HTML, CSS we could now output sketch artbords to a file that a front end developer could inspect and get the necessary layout information needed.
+            </p>
+            <p>
+                With this project I learned how to use the advanced features of sketch and would consider myself at an expert level with this tool.
+            </p>
+            <p><a href="images/quantum/uikit/castleui1.2.sketch" download>Download the Castle UI kit v1.2</a></p>
+        </div>
+    </div>
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Disk and Node Management</h2>
+        </div>
+        <div class="container">
+            <h3>Node Management</h3>
+            <p>
+                <img src="https://projects.invisionapp.com/static-signed/live-embed/179055824/262325474/1/latest/S0hbRxQsD5P7jL2ked5IO0XpfZzdMAlIxueTl5GtZ9YjoovAVbLzBHn7bGHyQlEIESPsTzIf0TkeuJyXclEmpBewlE/Node-Management-1-2x.png">
+                <img src="https://projects.invisionapp.com/static-signed/live-embed/179055824/262325473/1/latest/JvsHgwvWNuJ0IamVwaj2t2lE9esV2ymX4g93Oo18mnglEJckP093U5HNjjLslEQFzfEHeOhXtZMoZlwiuaSS4TMGAlE/Node-Management-2-2x.png">
+            </p>
+            <h3>Disk Management</h3>
+            <p><img src="https://projects.invisionapp.com/static-signed/live-embed/179055824/262325472/1/latest/Nd9oF1d9RcXvjfu5rFlEVlnvHJsFJ7uMfDvUIErXXXPdlEVVkcqVlhPEuvVlEFI50LZfojysGHowUmh5zCmlELqpDglE/Disk-Management-2x.png">
+            </p>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+</html>

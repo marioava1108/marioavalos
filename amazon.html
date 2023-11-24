@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+
+<head>
+    
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport'>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Mario Avalos : UX Designer</title>
+</head>
+
+<body id="project">
+    <ul class="navigation">
+        <li><a class="link" href="index.html">HOME</a></li>
+		<li><a class="link" href="avaya.html">AVAYA</a></li>
+        <li><a class="link" href="castle.html">CASTLE</a></li>
+        <li><a class="link focused" href="amazon.html">AMAZON</a></li>
+        <li><a class="link" href="hopesource.html">HOPESOURCE</a></li>
+        <li><a class="link" href="freelance.html">FREELANCE</a></li>
+        <li><a class="link" href="about.html">ABOUT</a></li>
+		<li><a class="link" href="personal.html">PERSONAL</a></li>
+    </ul>
+
+    <div class="stripe amazon">
+        <div class="container">
+            <img src="images/amazon/logo_amazonwhite.svg">
+        </div>
+    </div>
+    <div class="stripe recent">
+        <div class="container">
+            <h4>MY CONTRIBUTIONS</h4>
+        </div>
+    </div>
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Amazon Storywriter</h2>
+            <p>
+                In an effort to increase the quality of script submissions to Amazon Studios our team decided to build free screenwriting tool for writers of all skill levels.
+            </p>
+            <a class="button" href="https://storywriter.amazon.com/" target="_blank">View the web-app</a>
+            <a class="button" href="https://chrome.google.com/webstore/detail/amazon-storywriter/hmcnhpcghhifadgblhkonelnmbenkeep" target="_blank">View the Chrome app</a>
+            
+        </div>
+        <div class="container">
+            <h3>User Stories</h3>
+            <p>
+                In the beginning there were user stories. And those user stories were generated off of feedback. This feedback was gathered by our awesome PM <a href="https://www.linkedin.com/in/sarahkateemerson/" target="_blank">Sarah Emerson</a> who interviewed multiple screenwriters and basically asked them what they wish their current tool did well. I also did some research myself, concentrating on interaction and auto-formating.
+                <img src="images/amazon/stories1.png">
+            </p>
+        </div>
+        <div class="container">
+            <h3>Whiteboards and Wireframes</h3>
+            <p>
+                Things move pretty fast at Amazon, so combining wireframes with whiteboard sessions seemed like a good way to maximize productivity in the early part of the process. Looking back I think this made some contributors a bit reluctant to add to the whiteboard. Maybe it seemed more finalized? I don't know. But on the plus side we were able to move quickly and ship with quite a few features.
+                <img src="images/amazon/sketch1.png">
+                <img src="images/amazon/sketch2.jpg">
+            </p>
+        </div>
+        <div class="container">
+            <h3>Interaction Design</h3>
+            <p>
+                Here are a just a few samples of interaction design documentation I created for Storywriter.
+            </p>
+            <h4>Mobile</h4>
+            <p>
+                Although virtually no-one will be writing a script with a phone. We still wanted users to be able to do other things on a mobile device like:
+            </p>
+            <p>
+                Dashboard organization
+                <a href="images/amazon/filter1.png"><img src="images/amazon/filter1.png"></a>
+                <a href="images/amazon/filter2.png"><img src="images/amazon/filter2.png"></a>
+            </p>
+            <p>
+                Profile management
+                <a href="images/amazon/profile1.png"><img src="images/amazon/profile1.png"></a>
+            </p>
+            <p>
+                Sharing and notification system (desktop & mobile)
+                <a href="images/amazon/mobileshare1.png"><img src="images/amazon/mobileshare1.png">
+                </a>
+                <a href="images/amazon/share1.png"><img src="images/amazon/share1.png"></a>
+            </p>
+            <h4>Script menu</h4>
+            <p>
+                This is how writers manage individual scripts in the dashboard view.
+                <a href="images/amazon/assetmenu.jpg"><img src="images/amazon/assetmenu.jpg"></a>
+            </p>
+            <h4>The Element Picker</h4>
+            <p>
+                The Element Picker is a formatting tool designed to allow the user to change and/or identify text formats. This was a crucial part of the tool where users would be spending the majority of their time. Here is a diagram showing the interaction experience for the first version of that feature.
+                <a href="images/amazon/element1.png"><img src="images/amazon/element1.png"></a>
+                Testing this version revealed that users assumed they needed to interact with it. So we changed the design to the more descriptive version in production today.
+            </p>
+            <h4>Reviews (web & mobile)</h4>
+            <p>
+                <a href="images/amazon/reviews1.pdf" download>This document</a> shows the review interaction experience. This feature would let users collaborate over individual elements of a script on desktop and mobile devices.
+                <a href="images/amazon/reviews1.pdf" download><img src="images/amazon/reviews1.png"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>The Styleguide</h3>
+            <p>
+                I used the Atomic Design method to create the Storywriter design system. You can read more about atomic on <a href="http://bradfrost.com/blog/post/atomic-web-design/">Brad Frost's blog</a>.
+            </p>
+            <a class="button" href="styleguide/styleStorywriter.html">HTML Styleguide</a>
+            <p>
+                <a href="styleguide/styleStorywriter.html"><img src="images/amazon/styleguide1.png"></a>
+                Iconography
+                <a href="images/amazon/iconography.JPG"><img src="images/amazon/iconography.JPG"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Redlines</h3>
+            <p>
+                Examples of documentation I created to communicate specific design requirements.
+                <a href="images/amazon/redlines3.png"><img src="images/amazon/redlines3.png"></a>
+                <a href="images/amazon/redlines1.png"><img src="images/amazon/redlines1.png"></a>
+                <a href="images/amazon/redlines2.png"><img src="images/amazon/redlines2.png"></a>
+                <a href="images/amazon/redlines4.png"><img src="images/amazon/redlines4.png"></a>
+            </p>
+
+        </div>
+        <div class="container">
+            <h3>The Website</h3>
+            <p>
+                We needed a place where users could do the following:
+                <ul>
+                    <li>Sign up to use Storywriter</li>
+                    <li>Login to their account</li>
+                    <li>Access tutorials</li>
+                    <li>Access FAQ's</li>
+                    <li>Learn about Storywriter's features</li>
+                </ul>
+            </p>
+            <p>
+                Once we had the content for the site I went straight to wireframe to get signoff on information architecture and move to design.
+                <img src="images/amazon/wireframe1.jpg">
+            </p>
+            <p>
+                We already had a style guide for that app so design moved quickly. After I finished up the illustrations, all we needed was a nice photo for the header so our PM and I went out with one of our engineers and had a mini photoshoot.
+                <img src="images/amazon/web1.jpg">
+            </p>
+        </div>
+        <div class="container">
+            <h3>Feedback</h3>
+            <p>
+                User and peer feedback.
+                <img src="images/amazon/feedback1.png">
+                <img src="images/amazon/feedback2.JPG">
+                <img src="images/amazon/feedback3.JPG">
+            </p>
+        </div>
+    </div>
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>Amazon Studios Website</h2>
+            <p>
+                Amazon Studios started as a screenplay writing contest. After a few years of experimenting with reviews and storyboard testing we decided to strictly make this a place to submit a script for review and market original content.
+            </p>
+            <a class="button" href="https://studios.amazon.com/" target="_blank">Amazonstudios.com</a>
+        </div>
+        <div class="container">
+            <h3>User Flow</h3>
+            <p>
+                User flow I created for script submission.
+                <a href="images/amazon/scriptflow1.gif"><img src="images/amazon/scriptflow1.gif"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Wireframes</h3>
+            <p>Finalizing content and information architecture.
+                <a href="images/amazon/wireframes2.jpg"><img src="images/amazon/wireframes2.jpg"></a>
+                <a href="images/amazon/wireframes1.jpg"><img src="images/amazon/wireframes1.jpg"></a>
+            </p>
+        </div>
+        <div class="container">
+            <h3>Visual Design</h3>
+            <p>
+                <a href="images/amazon/web3.png"><img src="images/amazon/web3.png"></a>
+            </p>
+        </div>
+    </div>
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Print and Digital Marketing</h2>
+            <p>I was also responsible for providing print and adspace material for our marketing team.</p>
+        </div>
+        <div class="container">
+            <h3>Print</h3>
+            <p>Variety Magazine and the NY Television Festival
+                <img src="images/amazon/print3.png"></p>
+
+        </div>
+        <div class="container">
+            <h3>Email Newsletter</h3>
+            <p>I designed and coded our monthly newsletter.
+                <img src="images/amazon/email1.jpg">
+            </p>
+        </div>
+        <div class="container">
+            <h3>Ads and Digital Marketing</h3>
+            <p>Marketing billboards for the homepage hero slider.
+                <img src="images/amazon/sliders1.jpg">
+            </p>
+
+            <p>Ads that were placed on the retail website as well and 3rd party sites.
+                <img src="images/amazon/ads1.jpg">
+                <img src="images/amazon/ads2.jpg">
+        </div>
+        <div class="container">
+            <h3>Social Media</h3>
+            <p>Graphics for Facebook and social media contests.
+                <img src="images/amazon/social1.jpg">
+            </p>
+        </div>
+    </div>
+    <div class="stripe dark">
+        <div class="container heading">
+            <h2>Additional web applications</h2>
+            <p>
+                I also designed 2 other web apps for Amazon Studios. Unfortunately, I was and idiot and didn't do a good job saving any of my process work.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Amazon Storybuilder</h3>
+            <a class="button" href="https://studios.amazon.com/corkboards">Amazon Storybuilder</a>
+            <p>
+                A digital corkboard to start outlining a movie script. Unfortunately it never got out of the Beta stage but as of today (2/3/2018) it appears to be alive and kicking!
+            </p>
+            <p>Desktop & Mobile
+                <img src="images/amazon/storybuilder1.JPG">
+                <img src="images/amazon/mobilestory1.png">
+                <img src="images/amazon/mobilestory2.png">
+            </p>
+            <p>Styleguide
+                <img src="images/amazon/styleguide3.jpg">
+            </p>
+        </div>
+        <div class="container">
+            <h3>They Storyboard Player</h3>
+            <p>
+                The storyboard player was intended to get user feedback on scripts during early development. In theory users would leave feedback during any point in the story. We would then use that data to determine where or how to develop the story.
+                <img src="images/amazon/styleguide4.jpg">
+            </p>
+
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>
