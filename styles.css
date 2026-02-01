@@ -367,6 +367,17 @@ ul a {
 }
 
 
+/* axon page */
+
+#project .stripe.axon {
+    background-image: url(images/axon/workstation.gif);
+    background-size: 95%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
 /* castle page */
 
 #project .stripe .container {
