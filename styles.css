@@ -84,7 +84,7 @@ h1 {
     font-size: 2.9em;
     margin: 0;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 h2 {
@@ -357,7 +357,7 @@ ul a {
     background-size: 200%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
+    text-align: left;
 }
 
 #index .header .name {
