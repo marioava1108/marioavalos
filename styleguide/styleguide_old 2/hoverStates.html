@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,100,100italic,300,300italic,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>Storysuite header style guide</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<style>
+#storywriterStyleGuide .pageContainer ul.assetGroup li a.scriptTitle {
+    background-image: url("icn_scriptOrange.svg");
+}
+	
+#storywriterStyleGuide .pageContainer ul.assetGroup li.draftContainer {
+    background: transparent none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color rgb(249, 164, 36);
+}
+
+#storywriterStyleGuide .pageContainer ul.assetGroup li:hover {
+    background: rgb(255, 241, 230) none repeat;
+	border-color:#333;
+}
+
+#storywriterStyleGuide .pageContainer ul.assetGroup li{
+	position:relative;
+}
+.sync{
+  background: url("icn_syncAlert.svg") no-repeat scroll 10px center / 21px auto;
+    padding: 5px 10px 5px 35px;
+    position: absolute;
+    right: 40px;
+    top: 13px;
+    width: 33px;
+	color:rgb(0,175,247);
+}
+
+.sync:hover{
+	background-color:rgb(0,175,247);
+	background-image: url("icn_syncAlertWhite.svg");
+	cursor:pointer;
+	color:#fff;
+}
+
+
+.server{
+	opacity:.5;
+}
+
+#storywriterStyleGuide .pageContainer ul.assetGroup li:hover {
+	opacity:.9;
+	background-color:#333;
+	background-image:none;
+	z-index:900;
+}
+
+
+</style>
+
+
+<body id="storywriterStyleGuide">
+ <h2>Hover states</h2>
+       
+    <div class="pageContainer">
+    	<ul class="header">
+            <li><img class="logo_storywriter" src="logo_storywriter.svg"></li>
+            <li class="userName"><a href="">Jessica</a></li>
+        </ul>
+        <ul class="subHeader">
+        	<li class="newScript"><a href="">Create a new script</a></li>
+            <li class="upload"><a href="">Uplaod a script</a></li>
+        </ul>
+        <!-- <div class="persistingError">This is an error message that needs to persist until it is resolved.<a href="#">Try again</a></div> -->
+       
+        <ul class="assetGroup clearfix">
+        	<li class="clearfix"><a href="" class="scriptTitle clearfix">Mass Effect: The Movie<span class="timeStamp">created on 4/20/20115</span><a class="sync">Sync</a></a><a class="assetMenu"></a></li>
+        </ul>         
+
+        <ul class="assetGroup clearfix">
+        	<li class="clearfix server"><a href="" class="scriptTitle clearfix">Mass Effect: The Movie - Part II<span class="timeStamp">created on 4/20/20115</span><a class="sync">Sync</a></a></li>
+        </ul>  
+       
+        <ul class="assetGroup clearfix">
+        	<li class="clearfix"><a href="" class="scriptTitle clearfix">Indiana Jones and the Raiders of the Lost Ark<span class="timeStamp">created on 4/20/20115</span></a><a class="assetMenu"></a></li>
+            <li class="btn_expander open clearfix"><a href=""></a></li>
+            <li class="draftContainer clearfix">
+            	<ul>                	
+                    <li class="draft"><a href="" class="draftTitle">Draft 2</a><span class="timeStamp">created on 4/20/20115</span></li>
+                    <li class="draft"><a href="" class="draftTitle">Draft 3</a><span class="timeStamp">created on 4/20/20115</span><a class="assetMenu"></a></li>
+                </ul>            
+            </li>
+        </ul>
+    
+        <ul class="assetGroup clearfix">
+        	<li class="clearfix"><a href="" class="scriptTitle clearfix">Mass Effect: The Movie<span class="timeStamp">created on 4/20/20115</span></a><a class="assetMenu"></a></li>
+            <li class="btn_expander closed clearfix"><a href=""><span>Show more (3 drafts)</span></a></li>
+        </ul>  
+
+    
+    </div>
+
+
+
+
+    <h2>Mock ups</h2>
+    	<ul>
+        	<li><a href="globalHeader_highFidelity_allDevices2.pdf" target="_blank">&#8675; Download PDF mock ups</a></li>
+        </ul>
+
+
+</body>
+</html>

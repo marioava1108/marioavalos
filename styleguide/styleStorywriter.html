@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,100,100italic,300,300italic,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<title>Storysuite header style guide</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="storywriterStyleGuide">
+	<div class="stripe header">
+		<h1>Atomic Storywriter</h1>
+		<p>Using the atomic design methodology this style guide breaks down the Storywriter app and website UI into "building blocks".</p>
+		<ul>
+			<li><a href=""><img src="images/atom.svg"><span>Atoms</span></a></li>
+            <li class="arrow"></li>
+			<li><a href=""><img src="images/molecule.svg">Molecules</a></li>
+            <li class="arrow"></li>
+			<li><a href=""><img src="images/organism.svg">Organisms</a></li>
+            <li class="arrow"></li>
+			<li><a href=""><img src="images/template.svg">Templates</a></li>
+	  </ul>
+</div>
+
+<div class="stripe">
+    <h2>The Atoms</h2>
+	<p>The basic building blocks of the Storywriter UI. They usually consist of (but are not limited to) form elements, typography and iconography.</p>
+	<div class="container">
+		<div class="typography">
+			<h3>Typography</h3>
+			<ul>
+				<li>Font family: <span class="primaryFont">Lato</span> <a href="https://www.google.com/fonts#UsePlace:use/Collection:Lato" target="_blank">details on Google fonts &#x279a;</a></li>
+				<li>Font weights: <span class="primaryFont regular">300</span>, <span class="primaryFont bold">400</span> <em>(links, dropdown headers, lightbox titles, button text, form titles)</em></li>
+				<li>Fallback font: <span class="fallback">Arial, sans-serif</span></li>
+			</ul>
+		</div>
+		<h3>Color palette</h3>
+		<div class="colorPalette">
+			<ul>
+				<li><span class="lobbyBackground"></span></li>
+				<li>#F1F1F1</li>
+				<li>rgb(241,241,241)</li>
+			</ul>		
+			<ul>
+				<li><span class="font1"></span></li>
+				<li>#E5E5E5</li>
+				<li>rgb(229,229,229)</li>
+			</ul>	
+			<ul>
+				<li><span class="assetBorder"></span></li>
+				<li>#C5C5C5</li>
+				<li>rgb(197,197,197)</li>
+			</ul>
+			<ul>
+				<li><span class="font2"></span></li>
+				<li>#9F9F9F</li>
+                <li>rgb(159,159,159)</li>
+			</ul> 
+			<ul>
+				<li><span class="hover"></span></li>
+				<li>#575757</li>
+				<li>rgb(87,87,87)</li>
+			</ul>
+			<ul>
+				<li><span class="background"></span></li>
+				<li>#333333</li>
+				<li>rgb(51,51,51)</li>
+			</ul>            
+			<ul>
+				<li><span class="dropShadow"></span></li>
+				<li>#000000</li>
+				<li>rgb(0,0,0)</li>
+			</ul>
+			<ul>
+				<li><span class="errorMessaging"></span></li>
+				<li>#D63E3E</li>
+				<li>rgb(214,62,62)</li>
+			</ul>
+			<ul>
+				<li><span class="storywriterNotes"></span></li>
+				<li>#fff683</li>
+				<li>rgb(255,246,131)</li>
+			</ul>            
+			<ul>
+				<li><span class="storywriter"></span></li>
+				<li>#00BE88</li>
+				<li>rgb(0,190,136)</li>
+			</ul>
+			<ul>
+				<li><span class="storywriterHover"></span></li>
+				<li>#00dd99 (hover)</li>
+				<li>rgb(0,221,153)</li>
+			</ul>
+			<ul>
+				<li><span class="storywriterSecondary"></span></li>
+				<li>#05a0dd (hover)</li>
+				<li>rgb(4,160,221)</li>
+			</ul> 
+			<ul>
+				<li><span class="storywriterSecondaryHover"></span></li>
+				<li>#08c5ff (hover)</li>
+				<li>rgb(8,197,255)</li>
+			</ul>                                     
+		</div>
+		<div class="iconography">
+			<h3>Iconography</h3>
+			<ul class="dark clearfix">
+
+                <li class="logo"></li>
+                <li class="checkmark"></li>                
+                <li class="saveDraft" ></li> 
+                <li class="resume" ></li>
+                <li class="rename" ></li>
+                <li class="remove" ></li>
+                
+                
+                <li class="eyeball" ></li>
+                <li class="editTitle" ></li>
+				<li class="dropdownIcon" ></li>
+                <li class="download" ></li>
+                <li class="delete" ></li>
+                <li class="copy" ></li>
+                <li class="close" ></li>
+                <li class="alertRed" ></li>
+                <li class="alertBlue" ></li>
+                <li class="retry" ></li>            	
+                <li class="lobby" ></li>
+                <li class="undo" ></li>
+                <li class="redo" ></li>
+                <li class="sync" ></li>                
+                <li class="downloadCloud" ></li>
+                <li class="settings" ></li>
+                <li class="add"></li>
+                <li class="online" ></li>
+                <li class="offline" ></li>                 
+                <li class="loader"></li>  
+                              
+			</ul>
+            <ul class="white clearfix">
+				<li class="icnDropdown"></li>
+                <li class="storywriterIcon"></li>
+                 <li class="scriptGroup"></li> 
+                <li class="share"></li>
+                <li class="shareHover"></li>
+                <li class="user"></li>
+                <li class="new"></li>
+                <li class="import"></li>
+                <li class="pickerArrow"></li>
+                <li class="chevronDefault" ></li>
+                <li class="cheveron" ></li>
+                <li class="assetMenu" ></li>
+                <li class="assetMenuHover" ></li>
+                
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="stripe">
+    <h2>Molecules</h2>
+	<p>Molecules are groups of atoms bonded together. They create lightboxes, forms</p>
+	<div class="container">
+		<h3>Dropdown</h3> 
+		<div class="dropdown">
+
+			<div class="arrowUp">
+				<div class="innerArrowUp"></div>
+			</div>
+			<ul>
+				<li><a href="">List item one</a></li>
+				<li><a  class="selected" href="">List item two</a></li>
+				<li><a href="">List item three</a></li>
+				<li><a href="">List item four</a></li>
+			</ul>
+		</div>
+	</div>
+    
+    <div class="container">    
+		<h3>Dialogue box/lightbox</h3>
+    	<a name="lightbox"></a>
+    	<div class="dialogueBoxContainer clearfix">
+            <div class="dialogueBox">
+            	<h4>Title font is eighteen pixel four hundred weight</h4>
+                <p>Copy is 16px 300 weight with a 25px line-height. 16px 400 weight for the button text (don't forget the button shadow). See CSS (element inspector) for other layout values.</p>
+                <form>
+                	<ul>
+                    	<li><input id="option" type="radio" name="field" value="option"><label for="option"><span><span></span></span>Radio Button<a class="link radio">Learn more</a></label></li>
+                        <li><input id="option" type="radio" name="field" value="option"><label for="option"><span><span></span></span>Radio Button</label></li>
+                    	<li class="title">Input title:</li>
+                    	<li><input type="text" name="firstname"></li>
+                    	<li class="title">Textarea title</li>
+                        <li><textarea></textarea></li>
+                        <li class="checkbox"><input id="option" type="checkbox" name="field" value="option"><label for="option"><span><span></span></span>Check box</label></li>
+                    </ul>
+                    
+                </form> 
+                
+                <a class="button primary" href="##">Button text</a>
+                <a class="button disabled" href="##">Disabled</a>
+                <a class="button secondary" href="##">Cancel</a>
+            </div>        
+            <div class="dialogueBox">
+            	<h4><div class="icon error"></div>Error: This is An Error Message Title</h4>
+                <p>Copy is 16px 300 weight with a 25px line-height. 16px 400 weight for the button text (don't forget the button shadow). See CSS (element inspector) for other layout values.</p>
+                <a class="link" href="">Link in a dialogue box looks like this</a>
+                
+                <a class="button primary" href="##">Got it</a>
+                <a class="button secondary" href="##">Contact us</a>
+            </div>           
+                     
+        </div>
+	</div>
+</div>
+<div class="stripe">
+	<h2>Organisms</h2>
+</div>		
+
+
+
+</body>
+</html>
