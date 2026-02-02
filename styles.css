@@ -32,7 +32,18 @@ body {
 p {
     margin: 20px;
 }
+/*
+p:first-child:first-letter {
 
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-weight: 100;
+  }
+*/
 li,
 p {
     font-size: 1em;
@@ -70,19 +81,23 @@ h6 {
 h1 {
     line-height: 1;
     color: #1A1E23;
-    font-size: 6.9em;
+    font-size: 2.9em;
     margin: 0;
+    font-weight: 400;
+    padding: 20px 0;
 }
 
 h2 {
     font-size: 3.5em;
-    margin: 0 20px 0px 20px;
+    margin: 0 20px 20px 20px;
     line-height: 1;
     text-transform: uppercase;
 }
 
-.header h3 {
-    font-size: 3.59em;
+h1 span {
+    margin:0;
+    font-weight: 100;
+    color: #4D5A6A;
 }
 
 h3 {
@@ -126,7 +141,19 @@ h4 {
 .recent h4 {
     margin: 0;
     font-weight: 400;
+    text-align: center;
 }
+
+#index .container h5 {
+    width: 100%;
+    text-align: center;
+
+}
+
+#index .header .container{
+    max-width: 800px;
+}
+
 
 .sub {
     font-size: 1em;
@@ -138,7 +165,7 @@ h4 {
 
 .dark .overview,
 .dark .sub {
-    color: #4D5A6A;
+    color: #e9edef;
 }
 
 .dark .sub a {
@@ -203,6 +230,22 @@ a.button:hover {
     transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
 }
 
+#index .container .right a.button{
+    width: 62%;
+}
+
+
+#project .stripe.axonFusus .container{
+    text-align: center;
+}
+    #project .stripe.axonFusus .container img{
+        width: 75%;
+        padding:40px;
+        background-color: rgba(255, 255, 255, .85);
+    }
+
+/* links */
+
 .dark a,
 .light a {
     color: #3a659b;
@@ -249,6 +292,7 @@ ul {
 
 ul.navigation {
     margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 ul.navigation li {
@@ -262,7 +306,11 @@ ul a {
 
 .stripe {
     display: block;
-    padding: 160px 0 160px;
+    padding: 160px 160px;
+}
+
+.stripe.header{
+    padding:250px 0 0;
 }
 
 .stripe:after {
@@ -305,9 +353,8 @@ ul a {
 }
 
 #index .header {
-    background: url("images/img_header.jpg");
-    background-size: ;
-    background-position: top center;
+    background: url("images/axon/chart.jpg");
+    background-size: 200%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
@@ -316,7 +363,27 @@ ul a {
 #index .header .name {
     padding: 50px;
     margin: auto;
+    background:#fff;
+    display:block;
+
 }
+
+
+    #index .name p{
+        text-align: left;
+    }
+
+
+    .portrait {
+        width: 175px;
+        height: 175px;
+        border-radius: 175%;
+        background: url(images/axon/fam.jpg);
+        background-position: -39px 13px;
+        background-size: 247px;
+        float:right;
+    }
+
 
 .title {
     background: #e9edef;
@@ -326,6 +393,9 @@ ul a {
     position: relative;
 }
 
+
+
+
 .recent:after {
     position: absolute;
     content: " ";
@@ -333,12 +403,21 @@ ul a {
     left: 50%;
     width: 0;
     height: 0;
-    border-top: 20px #ffffff solid;
+    border-top: 20px #fff solid;
     border-right: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 20px solid transparent;
     margin-left: -20px;
 }
+
+#index .recent:after {
+    border-top: 20px #1A1E23 solid;
+    
+}
+
+
+
+
 
 #index .left img {
     width: 95%;
@@ -357,7 +436,31 @@ ul a {
     text-align: center;
 }
 
-#index .stripe.header,
+#index .container .left {
+    text-align: left;
+    width:66%
+}
+
+#index .container .right {
+    width:33%;
+    text-align: center;
+}
+
+#index .container img {
+    max-width: 30%;
+    height: auto;
+}
+
+    #index .light .container img {
+        background:#e9edef;
+    }
+
+    #index .dark .container img {
+        background:#1A1E23;
+    }
+
+
+
 #project .stripe.castle,
 #project .stripe.amazon,
 #project .stripe.hopesource,
@@ -366,13 +469,57 @@ ul a {
     padding-top: 201px;
 }
 
+.workHeader {
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    padding:40px 0;
+    margin-bottom: 30px;
+}
+
+.dark .workHeader .sub{
+    color: #fff;
+}
+
+.stripe.light .workHeader .sub{
+    color: #fff;
+}
+
+.primary .workHeader{
+    background-image: url(images/axon/dispatch.jpg);
+    background-size: 60%;
+    background-position-x:100%;
+    background-position-y:50%;
+    
+}
+
+.secondary .workHeader{
+    background-image: url(images/avaya/indexHeader.png);
+    background-size: 54%;
+    background-position-x:100%;
+    background-position-y:0%;
+}
+
+.tertiary .workHeader{
+    background-image: url(images/quantum/indexHeaderQuantum.png);
+    background-size: 52%;
+    background-position-x:100%;
+    background-position-y:0%;
+}
+
+.quaternary .workHeader{
+    background-image: url(images/amazon/indexHeaderAmazon.png);
+    background-size: 45%;
+    background-position-x:100%;
+    background-position-y:50%;
+}
 
 /* axon page */
 
-#project .stripe.axon {
-    background-image: url(images/axon/workstation.gif);
-    background-size: 95%;
-    background-position: top center;
+#project .stripe.axonFusus {
+    background-image: url(images/axon/AxonPageHeader.png);
+    background-size: 107%;
+    background-position: top -19%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -574,7 +721,68 @@ ul a {
     transition: all 300ms cubic-bezier(0.15, 0.46, 0.45, 1);
     margin: 20px;
     }
+
+    #index .container .left {
+        text-align: left;
+        width:100%
+    }
+    
+    #index .container .right {
+        width:100%;
+    }
+    
+    #index .container img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    #index .container .right a.button{
+        width: auto;
+    }
+
+    #index .name img{
+       display:none;
+    }
+
+    #index .name p{
+        text-align: left;
+        width:auto;
+    }
+
+
+    #index .workHeader{
+        background: none;
+        text-align: center;
+    }
+
+    .portrait {
+        width: 100px;
+        height: 100px;
+        border-radius: 175%;
+        background: url(images/axon/fam.jpg);
+        background-position: -68px -37px;
+        background-size: 427px;
+        float:right;
+    }
+
+    #index .header {
+        background: url(images/axon/chart.jpg);
+        background-size: 230%;
+        background-position: 0px -80px;
+    }
+
+    #project .stripe.axonFusus {
+        background-image: url(images/axon/AxonPageHeader.png);
+        background-size: 200%;
+        background-position: top -19%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
 }
+
+
+
     /* +:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+: CSS overides for presentation HTML +:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+:+: */
     .iframe-controls-container .buttons-container,
     .iframe-controls-container .tx-button::before,
