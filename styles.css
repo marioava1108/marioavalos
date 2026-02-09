@@ -287,10 +287,12 @@ a.button:hover {
 }
 
 
-#project .stripe.axonFusus .container{
+#project .stripe.axonFusus .container,
+#project .stripe.axonDispatch .container{
     text-align: center;
 }
-    #project .stripe.axonFusus .container img{
+    #project .stripe.axonFusus .container img,
+    #project .stripe.axonDispatch .container img{
         width: 33%;
         padding: 50px;
         background: linear-gradient(352deg,rgba(26, 30, 35, 1) 66%, rgba(45, 52, 61, .9) 100%);
@@ -594,13 +596,18 @@ ul a {
 /* axon page */
 
 #project .stripe.axonFusus {
-    background-image: url(images/axon/RespondUI3.png);
+    background-image: url(images/axon/fususPageHeader.png);
     background-size:100%;
     background-attachment: fixed ;
     background-repeat: no-repeat;
 }
 
-
+#project .stripe.axonDispatch {
+    background-image: url(images/axon/RespondUI3.png);
+    background-size:100%;
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+}
 
 /* castle page */
 
