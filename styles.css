@@ -178,7 +178,37 @@ h4 {
     text-align: right;
 }
 
+/*table*/
 
+.case-study-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 32px 0; 
+    line-height: 1.5;
+  }
+  .case-study-table th { 
+    background-color: #f8f9fa; 
+    text-align: left; 
+    padding: 16px; 
+    border-bottom: 2px solid #333; 
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .case-study-table td { 
+    padding: 16px; 
+    border-bottom: 1px solid #eee; 
+    vertical-align: top; 
+    font-size: 0.95rem;
+    color: #444;
+  }
+  .goal-column { 
+    font-weight: 600; 
+    color: #0052cc; /* Strategic Blue */
+  }
+  .case-study-table tr:last-child td { border-bottom: none; }
+  
+  
 /*buttons*/
 
 a.button {
@@ -232,6 +262,28 @@ a.button:hover {
 
 #index .container .right a.button{
     width: 62%;
+}
+
+#project .container.other .left{
+    width:66%;
+
+}
+
+#project .container.other .right{
+    width:33%;
+    text-align: center;
+
+}
+
+#project .container.other .right a.button{
+    width:50%;
+    text-align: center;
+
+}
+
+#project .container.other .left p,
+#project .container.other .sub{
+    text-align: left;
 }
 
 
@@ -307,7 +359,7 @@ ul a {
 
 .stripe {
     display: block;
-    padding: 160px 160px;
+    padding: 120px 160px;
 }
 
 .stripe.header{
@@ -439,10 +491,33 @@ ul a {
     text-align: center;
 }
 
+#index .primary .container .left {
+    width:60%
+}
+#index .primary .container .right {
+    width:40%
+}
+
+    #index .primary .container .right img{
+        max-width: 100%;
+        margin-bottom:15px;
+        margin-top:60px;
+    }
+
+
+
 #index .container .left {
     text-align: left;
     width:66%
 }
+
+
+#index .container .container{
+    width:100%;
+    padding-bottom:30px;
+    display:block;
+}
+
 
 #index .container .right {
     width:33%;
@@ -455,7 +530,7 @@ ul a {
 }
 
     #index .light .container img {
-        background:#e9edef;
+        
     }
 
     #index .dark .container img {
@@ -488,13 +563,6 @@ ul a {
     color: #fff;
 }
 
-.primary .workHeader{
-    background-image: url(images/axon/dispatch.jpg);
-    background-size: 60%;
-    background-position-x:100%;
-    background-position-y:50%;
-    
-}
 
 .secondary .workHeader{
     background-image: url(images/avaya/indexHeader.png);
@@ -535,7 +603,6 @@ ul a {
 }
 
 #project .stripe .container img {
-    max-width: 760px;
     width: 100%;
 }
 
@@ -781,6 +848,13 @@ ul a {
         background-attachment: fixed;
     }
 
+    #index .primary .container .left,
+    #index .primary .container .right {
+        width: 100%;
+    }
+    #index .primary .container .right img {
+        display:none;
+    }
 }
 
 

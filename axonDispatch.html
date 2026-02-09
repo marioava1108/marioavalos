@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport'>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Mario Avalos : UX Designer</title>
+</head>
+
+<body id="project">
+    <ul class="navigation">
+        <li><a class="link" href="index.html">HOME</a></li>
+		<!-- <li><a class="link" href="avaya.html">AVAYA</a></li>
+        <li><a class="link" href="castle.html">CASTLE</a></li>
+        <li><a class="link focused" href="amazon.html">AMAZON</a></li>
+        <li><a class="link" href="hopesource.html">HOPESOURCE</a></li>
+        <li><a class="link" href="freelance.html">FREELANCE</a></li> -->
+        <li><a class="link" href="about.html">CONTACT</a></li>
+        <li><a class="link" href="MarioAvalosResume2026.pdf" download>RESUMÉ</a></li>
+		<!-- <li><a class="link" href="personal.html">PERSONAL</a></li> -->
+    </ul>
+
+    <div class="stripe axonFusus">
+        <div class="container">
+            <img src="images/axon/axonLogoWhite.svg">
+        </div>
+    </div>
+    <div class="stripe recent">
+        <div class="container">
+            <h4>CASE STUDY</h4>
+        </div>
+    </div>
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Engineering Response: Building a 0-to-1 Dispatch Ecosystem for Mission-Critical Environments</h2>
+        </div>
+        <div class="container">
+            <p>
+                <h3>Overview</h3>
+                <h4>Sr. Product Designer</h4>
+                <span class="sub">2019-2024</span>
+            </p>
+            <p>
+                <h4>Team</h4>
+                <span class="sub">7 x Product Designers, 1 x UX Researcher, 10 x Product Managers, 60 x Engineers, 1 x Tech Writer</span>
+            </p>
+            <p>
+                <h4>Squads</h4>
+                <span class="sub">Incident Signal, Incident Management, Map, Search, Communication, Integration, Admin</span>
+            </p>
+        </div>
+        <div class="container">
+            
+            <h3>Context</h3>
+            <img src="images/axon/RespondUI2.png">
+            <p>Public Safety Answering Points (PSAPs) are high-stakes nerve centers where operational efficiency is measured in lives saved. At the core of this environment is Computer-Aided Dispatch (CAD)— the mission-critical engine used 24/7 to orchestrate emergency response. Axon identified a pivotal opportunity to disrupt this space by replacing fragmented, on-premise legacy systems with a unified, cloud-native ecosystem. This initiative was a foundational shift in public safety architecture, designed to eliminate the technical debt of legacy software while streamlining workflows for call takers and dispatchers. By prioritizing real-time data accessibility and seamless integration, we aimed to reduce response times and empower first responders with superior situational awareness. The challenge: architecting a modern, intuitive experience that maintains absolute reliability in the most demanding environments on earth.</p>
+        </div>
+        <div class="container">
+            <h3>Problem Statement</h3>
+            <p>Public Safety Answering Points (PSAPs) are facing an operational breaking point. Rising call volumes and chronic staffing shortages are exacerbated by fragmented legacy systems that require months of training and force dispatchers to juggle multiple siloed applications. This high cognitive load creates critical delays and information gaps, directly threatening agency funding and—more importantly—community safety.</p>
+        </div>
+        <div class="container">
+            <img src="images/axon/discovery.png">
+            <h3>Research & Discovery: Immersive Foundations</h3>
+            <p>To design a system that survives the pressure of a 911 call, we moved beyond the lab and into the field. Our discovery phase was rooted in ethnographic research, spending weeks embedded with the Fresno Police Department. Through ride-alongs and sit-alongs, we distilled raw observations into actionable Jobs-to-be-Done (JTBD) and Experience Outcomes for each persona.</p>
+            <h4>The Behavioral Challenge: Overcoming Muscle Memory</h4>
+            <p>A primary hurdle was "Change Anxiety." Veteran dispatchers had spent decades perfecting muscle memory on legacy command-line interfaces. To them, the old system wasn't just software—it was a predictable tool they could operate eyes-free under extreme stress. We realized that our solution wouldn't just be competing with another product; it was competing with decades of ingrained behavior.</p>
+            <table class="case-study-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Core Observation</th>
+                    <th style="width: 35%;">User Friction Point</th>
+                    <th style="width: 40%;">Strategic Design Goal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Ingrained Muscle Memory</strong></td>
+                    <td>Fear of losing the split-second speed provided by legacy Command Line Interfaces (CLI).</td>
+                    <td class="goal-column">Keyboard-First Architecture: Integrated a powerful command line and custom hotkeys to match legacy velocity.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cognitive Tunneling</strong></td>
+                    <td>High-stress environments cause users to lose focus on peripheral data and secondary windows.</td>
+                    <td class="goal-column">Progressive Disclosure: Surfacing only mission-critical information during active calls to reduce sensory overload.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>The "Monitor Wall"</strong></td>
+                    <td>Users manage 4–6 screens, leading to "lost cursor" syndrome and extreme context-switching fatigue.</td>
+                    <td class="goal-column">Omni-Navigation: Designing seamless inter-window workflows that allow data to flow across monitors without manual re-entry.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Divergent Priorities</strong></td>
+                    <td>Dispatchers need extreme speed/input; Responders need exhaustive situational detail.</td>
+                    <td class="goal-column">Persona-Specific Modality: Optimizing the dispatcher UI for "Time-on-Task" while the responder view focuses on "Context & Awareness."</td>
+                  </tr>
+                </tbody>
+              </table>
+              <img src="images/axon/discovery3.png">
+        </div>
+        <div class="container">
+            <h3>Ideation & Strategy: The Time on Task Framework</h3>
+            
+            <p>With a deep understanding of the dispatcher's "mental model," we moved into solutioning using a Time on Task (ToT) framework. Our objective was binary: the new system had to be more intuitive than the old one, but it could not be slower. To ensure this, we conducted performance benchmarking against legacy systems, establishing strict quantitative targets for critical workflows.</p>
+            <h4>Orchestrating Efficiency</h4>
+            <p>Our design strategy targeted two distinct layers of the user experience:</p>
+            <ul>
+                <li><b>Intra-Window Optimization:</b> Streamlining micro-interactions within a single view to ensure that the most frequent actions—like call entry and unit status updates—required minimal ocular and physical effort.</li>
+                <li><b>Inter-Window Fluidity:</b> Reducing the "tax" of context-switching by optimizing how data moves across a multi-monitor setup, ensuring dispatchers never lost their place during high-priority incidents.</li>
+            </ul>
+            <img src="images/axon/strategy.png">
+            <p>To measure success, we developed a comprehensive User Acceptance Testing (UAT) Matrix. This wasn't just a checklist; it was a performance tracker that mapped design iterations against our go-live benchmarks, ensuring every interaction was "field-ready."</p>
+            <h4>Collaborative Iteration</h4>
+            <img src="images/axon/iteration.png">
+            <p>Strategy was translated into execution through rapid, low-fidelity cycles. We facilitated co-design workshops and iterative wireframing sessions, involving engineering and stakeholders early. This collaborative "pressure-testing" allowed us to identify technical constraints around real-time data syncing early in the process, ensuring our final prototypes were both visionary and technically viable.</p>
+        </div>
+        <div class="container">
+            <h3>Design Execution: Refining for the High-Pressure Edge Case</h3>
+            <p>As we transitioned from strategy into high-fidelity design, our focus shifted from "ideal paths" to "stress-case scenarios." We knew that a beautiful interface would fail if it couldn't be parsed in a split second during a multi-vehicle accident or an active pursuit.</p>
+            <h4>Stress-Testing Interaction Models</h4>
+            <p>Early prototype testing revealed that standard UI patterns often crumbled under the speed requirements of a veteran dispatcher. We pivoted our interaction models to prioritize non-linear task flows, allowing users to jump between call-taking and unit-dispatching without losing data. This led to a more modular layout that accommodated the "organized chaos" of a live dispatch floor.</p>
+            <h4>Visual Ergonomics & Cognitive Hierarchy</h4>
+            <p>In the final design phase, we applied a rigorous lens to visual ergonomics:</p>
+            <ul>
+                <li><b>High-Contrast Scannability:</b> We utilized a high-contrast color palette and intentional whitespace to ensure that critical alerts (like "Officer Down" or "Weapon Present") were immediately distinguishable from routine status updates.</li>
+                <li><b>Information Density vs. Clarity:</b> We engineered a hierarchy that prioritized "at-a-glance" comprehension, using typography and iconography to draw the eye to the most volatile data points first.</li>
+                <li><b>System State Transparency:</b> In a mission-critical environment, the user must always know the system is "alive." We designed subtle but clear persistence indicators to maintain user trust in the cloud-native architecture.</li>
+            </ul>
+            <img src="images/axon/collabs.png">
+        </div>
+        <div class="container">
+            <h3>Development & Engineering: Bridging Design with Mission-Critical Reality</h3>
+            
+            <p>Building a system where failure is not an option required a radical level of design-to-engineering synergy. Our collaboration was centered on the "99.99% Reliability Mandate," ensuring the UI remained performant and trustworthy even under extreme network volatility.</p>
+            <ul>
+                <li><b>Engineering the "Always-On" Experience:</b> I led the UX effort to define Offline Mode capabilities, architecting a "Degraded State" strategy that prioritized core dispatch functions when connectivity was compromised. We mapped complex data-syncing behaviors to ensure no emergency data was lost during the transition back to the cloud.</li>
+                <li><b>High-Fidelity Documentation & QA:</b> To eliminate ambiguity, I moved beyond standard handoffs. We utilized annotated behavioral specs and logic flow diagrams that accounted for every edge case.</li>
+                <li><b>The Continuous Feedback Loop:</b> We established a "Live Design QA" rhythm—working side-by-side with developers to resolve performance bottlenecks in real-time. This partnership ensured that the high-density interface stayed responsive, maintaining the "sub-second" interaction speed required for public safety.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Impact & Results: Operational Success & System Adoption</h3>
+            <p>The ultimate metric for this project wasn’t just the deployment of a new CAD system—it was the successful migration of a mission-critical operation without a single second of downtime. We measured success by the speed to proficiency and the reliability of the platform under live emergency conditions.</p>
+            <h4>The Migration: Fresno PSAP Go-Live</h4>
+            <p>During the high-stakes transition in Fresno, we operated on the front lines alongside call takers and dispatchers. This "on-the-floor" support allowed us to:</p>
+            <ul>
+                <li><b>Facilitate Real-Time Resolution:</b> We addressed edge-case friction points instantly, ensuring that "change anxiety" was replaced by operational confidence.</li>
+                <li><b>Maintain Operational Continuity:</b> By providing live, rapid troubleshooting, we ensured the agency hit its federal response time targets from hour one.</li>
+            </ul>
+            <h4>Performance Benchmarking: Legacy vs. Cloud-Native</h4>
+            <p>Post-launch data confirmed that our "Time on Task" framework delivered measurable gains. By benchmarking our solution against the previous legacy system, we validated:</p>
+            <ul>
+                <li><b>Workflow Optimization:</b> Critical dispatch actions met or exceeded legacy speeds, proving that a modern UI could match the velocity of command-line muscle memory.</li>
+                <li><b>Error Reduction:</b> The focus on cognitive hierarchy and progressive disclosure led to a significant decrease in data-entry errors during high-priority incidents.</li>
+                <li><b>Rapid Adoption:</b> The intuitive nature of the design drastically shortened the onboarding curve for new staff, providing immediate relief to a stretched workforce.</li>
+            </ul>
+            <img src="images/axon/impact.png">
+        </div>
+        <div class="container">
+            <h3>Reflections & Future Horizons</h3>
+            <p>Architecting a mission-critical system for public safety was as much a lesson in human psychology as it was in interface design. It reinforced that in high-stakes environments, design is a matter of operational trust.</p>
+            <h4>What Prospered:</h4>
+            <ul>
+                <li><b>Ethnographic Immersion:</b> Deeply embedding with the Fresno PD was non-negotiable. Designing for this space requires an understanding of "stress-case" conventions that simply cannot be replicated in a lab.</li>
+                <li><b>Quantifiable Benchmarking:</b> By anchoring our goals in performance data rather than aesthetics, we moved the conversation from "Do you like this UI?" to "Does this help you save lives?" This was the key to overcoming legacy resistance.</li>
+                <li><b>Concurrent Engineering:</b> Partnering with developers from day zero ensured that our "99.99% uptime" goal was baked into the UI logic, preventing the friction of technical debt during the high-pressure launch.</li>
+            </ul>
+            <h4>Opportunities for Growth:</h4>
+            <ul>
+                <li><b>Design as Change Management:</b> I learned that in the public safety sector, the "product" is only half the battle. If I were to do it again, I would integrate training and onboarding strategy deeper into the design phase to further mitigate user "change anxiety."</li>
+                <li><b>Scaling Beyond the Alpha:</b> While our partnership with Fresno PD provided deep, high-quality data, I’ve realized the value of a broader "0 to 10" perspective. Engaging a more diverse range of PSAPs earlier would have allowed us to stress-test regional workflow variances before finalizing the core architecture.</li>
+            </ul>
+
+        </div>
+        <div class="container">
+            <h3>Final Thoughts</h3>
+            <p>
+                We recognized that transitioning a police department to a new CAD system is as much about cultural trust as it is about technical performance. By prioritizing deep user empathy, rigorous real-world testing, and a commitment to continuous refinement, we successfully transformed skepticism into advocacy—building a foundation of long-term trust with the agencies we serve.
+                <img src="images/axon/RespondUI2.png">
+            </p>
+        </div>
+        
+        <div class="container other heading">
+            <h2>Other Work @ Axon</h2>
+            <div class="left">
+                <h4>Fusus Core</h4>
+                <span class="sub">2024-2025</span>
+                <p>In this case study, I look back on how I led the design strategy that drove a 60% reduction in support volume and empowered business owners to get online independently.. Building on my initial work designing mission-critical workflows for patrol officers and dispatchers, I transformed a high-friction technical process into a scalable, user-friendly configuration experience for real-time crime centers. This focus on systems thinking and cross-functional collaboration resulted in a 60% reduction in support call volume and accelerated time-to-value for enterprise customers.</p>
+            </div>
+            <div class="right">
+                <img src="images/axon/FususUI.png">
+                <a href="axonFusus.html" class="button">VIEW THE WORK</a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div class="stripe light">
+
+    </div>
+        
+
+
+</body>
+
+
+
+
+</html>
