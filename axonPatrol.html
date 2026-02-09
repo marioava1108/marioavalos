@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+    
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+    <meta content='user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width' name='viewport'>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Khand:400,300,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <title>Mario Avalos : UX Designer</title>
+</head>
+
+<body id="project">
+    <ul class="navigation">
+        <li><a class="link" href="index.html">HOME</a></li>
+		<!-- <li><a class="link" href="avaya.html">AVAYA</a></li>
+        <li><a class="link" href="castle.html">CASTLE</a></li>
+        <li><a class="link focused" href="amazon.html">AMAZON</a></li>
+        <li><a class="link" href="hopesource.html">HOPESOURCE</a></li>
+        <li><a class="link" href="freelance.html">FREELANCE</a></li> -->
+        <li><a class="link" href="about.html">CONTACT</a></li>
+        <li><a class="link" href="MarioAvalosResume2026.pdf" download>RESUMÉ</a></li>
+		<!-- <li><a class="link" href="personal.html">PERSONAL</a></li> -->
+    </ul>
+
+    <div class="stripe axonPatrol">
+        <div class="container">
+            <img src="images/axon/axonLogoWhite.svg">
+        </div>
+    </div>
+    <div class="stripe recent">
+        <div class="container">
+            <h4>CASE STUDY</h4>
+        </div>
+    </div>
+    <div class="stripe light">
+        <div class="container heading">
+            <h2>Seconds vs. Screens: Reducing Cognitive Load in the Patrol Cockpit</h2>
+        </div>
+        <div class="container">
+            <h3>Overview</h3>
+            <p><b>Sr Product Designer</b><br>2019-2024</p>
+            <p><b>Team</b><br> x Product Designers, 1 x UX Researcher, 10 x Product Managers, 60 x Engineers, 1 x Tech Writer</p>
+            <p><b>Squads</b><br> Signal, Incident Management, Map, Search, Communication, Integration, Admin</p>
+        </div>
+        <div class="container">
+            
+            <h3>Context</h3>
+            <img src="images/axon/problems.png">
+            <p>First responders rely on in-car MDTs to navigate and receive life-saving data, yet most existing systems are antiquated, requiring precise touch input on unresponsive screens—often while the vehicle is in motion.</p>
+            <p><h4>The Objective</h4></p>
+            <ul>
+                <li><b>Modernize the MDT:</b> Transform laggy, desktop-port software into a touch-first, high-contrast mobile experience.</li>
+                <li><b>Reduce Distracted Driving:</b> Streamline workflows to minimize "eyes-off-the-road" time.</li>
+                <li><b>Close the Information Gap:</b> Ensure critical dispatch updates are prominent and digestible at a glance, preventing "blind" arrivals on-scene.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Problem Statement</h3>
+            <p>The Crisis of Attention: In public safety, every second spent "Alt-Tabbing" through a legacy MDT is a second lost on-scene. The current friction between unresponsive hardware and information-dense software results in delayed arrivals and uninformed responses. My goal was to transform the MDT from a burdensome data entry tool into a tactical asset that minimizes mental overhead and maximizes road safety through automated, high-contrast, and simplified workflows.</p>
+        </div>
+        <div class="container">
+            <img src="images/axon/researchdisco.png">
+            <h3>Research & Discovery: The Field Reality</h3>
+            <p><b>Methodology:</b> To move beyond theoretical UX, I conducted extensive longitudinal ride-alongs across law enforcement and fire departments. By observing "day-in-the-life" patrols alongside high-acuity emergency calls, I identified the critical friction points between responders and their technology.</p>
+            <p><h4>Key Insights:</h4></p>
+            <ul>
+                <li><b>The Ergonomic Failure of Legacy Hardware:</b> Physical environmental factors—including extreme cockpit glare, vehicle vibration, and poor resistive touch sensitivity—rendered traditional desktop-port interfaces nearly unusable and highly error-prone during transit.</li>
+                <li><b>The "Contextual Blindness" of Static UI:</b> Current systems lacked incident-state awareness. The interface remained static regardless of whether a responder was navigating to a high-priority call or already active on-scene, cluttering the view with irrelevant tools (like routing) when tactical data was needed most.</li>
+                <li><b>The Manual Input Burden:</b> I observed that the "Manual-First" design of legacy software forced dangerous distractions, requiring precise data entry at moments when the driver's cognitive load was already peaked.</li>
+                <li><b>The Experience Spectrum:</b> "One-size-fits-all" design failed both ends of the user base. Veteran officers required high-density tactical data with minimal guidance, while newer recruits or mutual-aid responders needed heavy navigational support. This highlighted the need for adaptive UI components.</li>
+            </ul>
+            
+        </div>
+        <div class="container">
+            <h3>Ideation & Strategy: Designing for High-Acuity Environments</h3>
+            <img src="images/axon/strategyPatrol.png">
+            <p><b>The Strategy:</b> Low-Disruption Evolution To mitigate the risk of "innovation fatigue" in life-critical workflows, we adopted an incremental deployment strategy. By partnering with a pilot precinct, we introduced "modular updates" that allowed us to validate usability in the field without compromising officer safety or system uptime.</p>
+            
+            <p><h4>Key Strategic Pillars:</h4></p>
+            <ul>
+                <li>
+                    <b>Contextual Adaptability (The "Experience Toggle"):</b> Recognizing that a "one-size-fits-all" UI fails in public safety, I architected a configurable interface that adjusts to user proficiency.
+                    <ul>
+                        <li><b>Expert Mode:</b> Minimalist tactical views for veteran officers with high local knowledge.</li>
+                        <li><b>Assisted Mode:</b> Proactive, turn-by-turn navigational support for new recruits and mutual-aid responders.</li>
+                    </ul>
+                </li>
+
+                <li><b>Dynamic Noise Suppression:</b> To protect the responder’s focus, we developed intelligent filtering logic. When a responder is assigned to a high-priority incident, the system automatically suppresses non-essential alerts, ensuring the "signal-to-noise" ratio remains optimized for the mission at hand.</li>
+                <li>
+                    <b>Input Optimization & Friction Reduction:</b> I transitioned the system from "Manual-First" to "Automation-First."
+                    <ul>
+                        <li><b>Smart Defaults:</b> Pre-populating mission data by syncing real-time CAD feeds.</li>
+                        <li><b>Tactile UX:</b> Implementing high-hit-area touch gestures and voice-command hooks to eliminate the need for precise "hunt-and-peck" typing during high-speed transit.</li>
+                    </ul>
+                </li>
+                <li><b>Strategic Change Management:</b> Institutional inertia is the biggest barrier to public safety tech. We addressed this by identifying "Field Champions"—veteran responders who co-created the system. Their "buy-in" transformed the rollout from a top-down mandate into a peer-endorsed tool, drastically reducing training friction.</li>
+            </ul>
+         </div>
+        <div class="container">
+            <h3>Design & Iteration: Validating in the "Mobile Cockpit"</h3>
+            <img src="images/axon/designIterationPatrol.png">
+            <p><b>The Process:</b> High-Fidelity Field Testing I moved beyond the desk, conducting iterative prototyping directly inside patrol vehicles. By testing with our pilot group in situ, I was able to observe how vibrations, lighting shifts, and high-stress "active calls" impacted the usability of our UI. This allowed us to validate the design in a live precinct before scaling across the department.</p>
+            <h4>Key Iterations & Refinements:</h4>
+            <ul>
+                <li><b>The "Triage" of Information Architecture:</b> We prioritized high-criticality, high-frequency workflows, stripping away secondary UI elements during active incidents to reduce the probability of "error-under-stress."</li>
+                <li><b>State-Aware Typography & Density:</b> Recognizing that a responder’s visual acuity changes based on their status, I engineered dynamic data density. Font sizes and information hierarchies shift based on whether the vehicle is "In Pursuit" (large, high-contrast targets) or "On Scene" (higher density tactical data).</li>
+                <li><b>Environmental Light Adaptability:</b> To solve for extreme cockpit glare and pupil dilation during night shifts, I implemented Automated Day/Night Modes. This wasn't just a theme change—it was a safety requirement to ensure 100% readability across 24-hour shifts.</li>
+                <li><b>Semantic Color-Coding for Mental Mapping:</b> I utilized systematic color-coding to provide instant orientation. By assigning specific "chromatic anchors" to core modules, I enabled users to identify their location within the app using only their peripheral vision.</li>
+                <li><b>Ergonomic Precision (The "Right-Hand" Pivot):</b> Field testing revealed that drivers struggled with "reach-over" fatigue. I iterated on the layout to pin critical navigation elements to the right side of the viewport, shortening the physical reach and increasing tap precision for the driver.</li>
+            </ul>
+            
+        </div>
+        <div class="container">
+            <h3>Development & Collaboration: Engineering for the Edge Case</h3>
+            <img src="images/axon/collabPatrol.png">
+            <p><b>The Strategy:</b> Building Resilience into the Workflow Success in public safety tech requires a deep partnership between Design, Engineering, and Agency Leadership. I collaborated closely with our technical teams to ensure the UI didn't just look good in a Figma file, but performed flawlessly in the "disconnected" reality of the field.</p>
+            <h4>Key Collaborative Wins:</h4>
+            <ul>
+                <li><b>Designing for "Offline-First" Resilience:</b> Public safety data is only useful if it’s available. I worked with engineers to design predictable latency states, ensuring the UI provided clear feedback and maintained core functionality even during "signal dead zones." We prioritized local data caching to prevent interface freezes during critical navigation.</li>
+                <li><b>Hardware-Agnostic Input Standardization:</b> Field hardware varies wildly between agencies. I led the effort to standardize multimodal inputs (Touch + Voice), ensuring that gesture-based commands and voice hooks remained consistent and performant across a fragmented landscape of ruggedized tablets and mounted MDTs.</li>
+                <li><b>The Unified "Public Safety" Framework:</b> Law Enforcement and Fire/EMS have distinct—and often conflicting—operational needs. I facilitated cross-disciplinary workshops to build a modular design system that shared a core architecture while allowing for "agency-specific" logic. This balanced the need for a scalable product with the specialized workflows of different first responders.</li>
+                <li><b>Operational Onboarding & Governance:</b> Implementation is as critical as the design. I partnered with Agency Leadership and Training Officers to architect a phased rollout. By co-authoring the training curriculum and defining "Go-Live" safety protocols, we ensured that the transition to the new system enhanced—rather than disrupted—community response times.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Impact & Results: Quantifying Safety and Adoption</h3>
+            <img src="images/axon/patrolUI3.png">
+            <p>The transition to the new in-car ecosystem yielded immediate and measurable improvements in both operational safety and user sentiment. Within 4 weeks of deployment:</p>
+             <ul>
+                <li><b>94% Preferred Adoption:</b> Nearly the entire pilot group favored the new experience over the legacy system, citing a drastic reduction in task-completion time.</li>
+                <li><b>92% Improved Situational Awareness:</b> Users reported that the "glanceable" UI architecture and automation-first workflows made it significantly easier to maintain focus on the road while staying synchronized with mission-critical data.</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h3>Reflections & Strategic Learnings</h3>
+            <ul>
+                <li><b>Incrementalism as a Trust-Building Strategy:</b> In high-stakes environments, radical change is often met with resistance. By deploying updates in a "modular" fashion, we maintained system confidence and allowed responders to adapt without feeling overwhelmed during active duty.</li>
+                <li><b>The Power of User-Defined Configuration:</b> Public safety is not a monolith. Designing for "The Veteran" and "The Recruit" through a single, adaptive interface proved that customization is a safety feature, not just a preference. It allowed responders to dial in the exact level of support they needed for their specific role.</li>
+                <li><b>Augmentation Over Replacement:</b> This project reinforced that while automation can drastically reduce cognitive load, human intuition remains the primary tactical asset. Our goal shifted from "solving the problem with AI" to "clearing the path for the responder," ensuring the technology supported—rather than dictated—their decision-making process.</li>
+            </ul>
+            <img src="images/axon/reflect.png">
+        </div>
+        <div class="container other heading">
+            <h3>Other Axon Work</h3>
+            <h4>Fusus Core</h4>
+            <div class="left">
+                <p>Building on my initial work designing mission-critical workflows for patrol officers and dispatchers, I transformed a high-friction technical process into a scalable, user-friendly configuration experience for real-time crime centers. This focus on systems thinking and cross-functional collaboration resulted in a 60% reduction in support call volume and accelerated time-to-value for enterprise customers.</p>
+            </div>
+            <div class="right">
+                <img src="images/axon/FususUI.png">
+                <a href="axonFusus.html" class="button">VIEW THE WORK</a>
+            </div>
+            <div style="clear: both;"></div>
+            <h4>CAD (Computer Aided Dispatch)</h4>
+            <div class="left">
+                <p>By bridging the gap between decades of muscle memory and modern interaction patterns, I engineered a 'Time on Task' framework that prioritized split-second efficiency for dispatchers. My performance-led approach ensured mission-critical reliability and 99.99% uptime during the high-stakes Fresno PSAP migration, achieving performance parity with legacy systems while significantly reducing user 'change anxiety' and building operational trust.</p>
+            </div>
+            <div class="right">
+                <img src="images/axon/RespondUI.png">
+                <a href="axonDispatch.html" class="button">VIEW THE WORK</a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+        
+
+
+</body>
+
+
+
+
+</html>

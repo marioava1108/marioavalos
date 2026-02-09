@@ -19,6 +19,13 @@ body {
     font-size: 100%;
 }
 
+
+#project .container ul ul {
+    padding:0px;
+    font-size: 90%;
+    font-style: italic;
+}
+
 .group:after {
     content: "";
     display: table;
@@ -288,11 +295,13 @@ a.button:hover {
 
 
 #project .stripe.axonFusus .container,
-#project .stripe.axonDispatch .container{
+#project .stripe.axonDispatch .container,
+#project .stripe.axonPatrol .container{
     text-align: center;
 }
     #project .stripe.axonFusus .container img,
-    #project .stripe.axonDispatch .container img{
+    #project .stripe.axonDispatch .container img,
+    #project .stripe.axonPatrol .container{
         width: 33%;
         padding: 50px;
         background: linear-gradient(352deg,rgba(26, 30, 35, 1) 66%, rgba(45, 52, 61, .9) 100%);
@@ -608,6 +617,15 @@ ul a {
     background-attachment: fixed ;
     background-repeat: no-repeat;
 }
+
+#project .stripe.axonPatrol {
+    background-image: url(images/axon/patrolUI2.png);
+    background-size:100%;
+    background-position: center top;
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+}
+
 
 /* castle page */
 
