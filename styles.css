@@ -559,6 +559,12 @@ ul a {
     color: #fff;
 }
 
+
+/*scrolling background */
+
+
+
+
 .stripe.light .workHeader .sub{
     color: #fff;
 }
@@ -588,12 +594,12 @@ ul a {
 /* axon page */
 
 #project .stripe.axonFusus {
-    background-image: url(images/axon/AxonPageHeader.png);
-    background-size: 107%;
-    background-position: top -19%;
+    background-image: url(images/axon/RespondUI3.png);
+    background-size:100%;
+    background-attachment: fixed ;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
 
 
 /* castle page */
@@ -841,9 +847,9 @@ ul a {
     }
 
     #project .stripe.axonFusus {
-        background-image: url(images/axon/AxonPageHeader.png);
-        background-size: 200%;
-        background-position: top -19%;
+        background-image: url(images/axon/FususPageHeader.png);
+        background-size: 125%;
+        background-position: top;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
