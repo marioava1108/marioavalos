@@ -868,6 +868,19 @@ ul a {
     #index .primary .container .right img {
         display:none;
     }
+
+    #project .container.other .left,
+    #project .container.other .right{
+        width: 100%;
+    }
+    #project .container.other .right img{
+        display: none;
+    }
+    #project .container.other .right a.button{
+        width: 66%;
+    }
+
+
 }
 
 
