@@ -39,6 +39,10 @@ body {
 p {
     margin: 20px;
 }
+
+#index .left p{
+    margin: 0 20px
+}
 /*
 p:first-child:first-letter {
 
